@@ -1,4 +1,8 @@
-lockfileVersion: '6.0'
+lockfileVersion: '6.1'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
 
 dependencies:
   '@solidjs/router':
@@ -9,6 +13,9 @@ dependencies:
     version: registry.npmmirror.com/solid-js@1.7.3
 
 devDependencies:
+  '@types/node':
+    specifier: ^20.3.1
+    version: 20.3.1
   typescript:
     specifier: ^5.0.4
     version: registry.npmmirror.com/typescript@5.0.4
@@ -17,7 +24,7 @@ devDependencies:
     version: registry.npmmirror.com/unocss@0.51.8(postcss@8.4.23)(vite@4.3.3)
   vite:
     specifier: ^4.3.3
-    version: registry.npmmirror.com/vite@4.3.3
+    version: registry.npmmirror.com/vite@4.3.3(@types/node@20.3.1)
   vite-plugin-solid:
     specifier: ^2.7.0
     version: registry.npmmirror.com/vite-plugin-solid@2.7.0(solid-js@1.7.3)(vite@4.3.3)
@@ -221,6 +228,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@types/node@20.3.1:
+    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
+    dev: true
 
   /fsevents@2.3.2:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
@@ -1096,7 +1107,7 @@ packages:
       chokidar: registry.npmmirror.com/chokidar@3.5.3
       fast-glob: registry.npmmirror.com/fast-glob@3.2.12
       magic-string: registry.npmmirror.com/magic-string@0.30.0
-      vite: registry.npmmirror.com/vite@4.3.3
+      vite: registry.npmmirror.com/vite@4.3.3(@types/node@20.3.1)
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -2036,14 +2047,15 @@ packages:
       merge-anything: registry.npmmirror.com/merge-anything@5.1.5
       solid-js: registry.npmmirror.com/solid-js@1.7.3
       solid-refresh: registry.npmmirror.com/solid-refresh@0.5.2(solid-js@1.7.3)
-      vite: registry.npmmirror.com/vite@4.3.3
+      vite: registry.npmmirror.com/vite@4.3.3(@types/node@20.3.1)
       vitefu: registry.npmmirror.com/vitefu@0.2.4(vite@4.3.3)
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  registry.npmmirror.com/vite@4.3.3:
+  registry.npmmirror.com/vite@4.3.3(@types/node@20.3.1):
     resolution: {integrity: sha512-MwFlLBO4udZXd+VBcezo3u8mC77YQk+ik+fbc0GZWGgzfbPP+8Kf0fldhARqvSYmtIWoAJ5BXPClUbMTlqFxrA==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/vite/-/vite-4.3.3.tgz}
+    id: registry.npmmirror.com/vite/4.3.3
     name: vite
     version: 4.3.3
     engines: {node: ^14.18.0 || >=16.0.0}
@@ -2069,6 +2081,7 @@ packages:
       terser:
         optional: true
     dependencies:
+      '@types/node': 20.3.1
       esbuild: registry.npmmirror.com/esbuild@0.17.18
       postcss: registry.npmmirror.com/postcss@8.4.23
       rollup: registry.npmmirror.com/rollup@3.21.0
@@ -2087,7 +2100,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: registry.npmmirror.com/vite@4.3.3
+      vite: registry.npmmirror.com/vite@4.3.3(@types/node@20.3.1)
     dev: true
 
   registry.npmmirror.com/which@2.0.2:
